@@ -29,7 +29,7 @@ class Ship():
         #Обновляет атрибут center, не rect
         if self.moving_right and self.rect.right < self.screen_rect.right:
             self.center += self.ai_settings.ship_speed_factory
-        if self.moving_left and self.rect.left > 0:
+        if self.moving_left and self.rect.left > -50:
             self.center -= self.ai_settings.ship_speed_factory
         #Обновление атрибута rect на основании self.center
         self.rect.centerx = self.center

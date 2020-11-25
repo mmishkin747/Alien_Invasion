@@ -7,14 +7,14 @@ class Settings():
     def __init__(self):
         """Инициализирует статические настройки игры"""
         #Парамаетры экрана.
-        self.screen_width = display.Info().current_w
-        self.screen_heigth = display.Info().current_h
+        self.screen_width = 1200        #display.Info().current_w
+        self.screen_heigth = 900        #display.Info().current_h
         self.bg_collor = (170, 230, 230)
         #Настройки коробля
         self.ship_limit = 3
         #Параметры пули
-        self.bullet_width = 300
-        self.bullet_heigth = 15
+        self.bullet_width = 30
+        self.bullet_heigth = 10
         self.bullet_color = 60, 60, 60
         self.bullet_allowed = 100
         # Настройки пришельцев
@@ -32,3 +32,6 @@ class Settings():
 
         # fleet_direction = 1 обозначает движение вправо; а -1 - влево
         self.fleet_direction = 1
+
+        #Подсчет очков
+        self.alien_points = 50
